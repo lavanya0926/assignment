@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <script>
+      function add(){
+        let a=txtNum1.value
+        let b=txtNum2.value
+        lblAnswer.innerHTML=Number(a)+Number(b)
+      }
+      function sub(){
+        let a=txtNum1.value
+        let b=txtNum2.value
+        lblAnswer.innerHTML=Number(a)-Number(b)
+      }
+      function mul(){
+        let a=txtNum1.value
+        let b=txtNum2.value
+        lblAnswer.innerHTML=Number(a)*Number(b)
+      }
+      function div(){
+        let a=txtNum1.value
+        let b=txtNum2.value
+        lblAnswer.innerHTML=Number(a)/Number(b)
+      }
+    </script>
+</head>
+<body>
+   <input type="Number" id="txtNum1">
+   <input type="Number" id="txtNum2">
+   <button onclick="add()">Add</button>
+   <button onclick="sub()">Sub</button>
+   <button onclick="mul()">Mul</button>
+   <button onclick="div()">Div</button>
+   <hr>
+   <label id="lblAnswer">Answer:</label>
+   <hr>
+</body>
+</html>
